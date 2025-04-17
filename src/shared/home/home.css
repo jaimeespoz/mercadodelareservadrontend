@@ -1,0 +1,122 @@
+.home-hero-section {
+    height: 100vh;
+    background-image: url("./assets/images/11.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper-mision {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame-mision {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 24px;
+
+    h2 {
+        font-size: 3.2rem;
+        max-width: 600px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+        max-width: 500px;
+        line-height: 120%;
+        text-align: center;
+        color: orange;
+    }
+
+    p {
+        font-weight: 300;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    button {
+        background: #fff;
+        padding: 6px 30px;
+        border: none;
+        border-radius: 6px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    button:hover {
+        color: #fff;
+        background: #c06b3e;
+    }
+}
+
+.home-content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    max-width: max-content;
+    left: 0;
+    width: max-content;
+    color: #fff;
+
+    h2 {
+        font-size: 3.2rem;
+        max-width: 600px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+        max-width: 500px;
+        line-height: 120%;
+        text-align: center;
+        color: orange;
+    }
+
+    p {
+        font-weight: 300;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    button {
+        background: #fff;
+        padding: 6px 30px;
+        border: none;
+        border-radius: 6px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    button:hover {
+        color: #fff;
+        background: #c06b3e;
+    }
+}
+
+@media screen and (max-width: 496px) {
+    .frame-mision {
+        left: 8px;
+        width: 60%;
+        padding: 0px 30px;
+        transform: translateY(-30%);
+        gap: 4px;
+    }
+}

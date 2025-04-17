@@ -1,0 +1,105 @@
+/* aviso-previo */
+
+.wrapper-aviso {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    /* text-align: left; */
+    /* color: rgb(230, 230, 230); */
+    /* padding: 24px; */
+    /* height: 520px; */
+}
+
+.layer-aviso {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: left;
+}
+
+.titulo-aviso {
+    background: red;
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 700;
+    /* line-height: 160%; */
+    padding: 12px 0;
+    text-align: center;
+}
+
+.fecha-aviso {
+    background: red;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    /* line-height: 160%; */
+    padding: 12px 0;
+    text-align: center;
+}
+
+.detalle-aviso {
+    /* background: red; */
+    color: rgba(6, 114, 203, 0.95);
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+hr.solid {
+    border-top: 1px solid #bbb;
+}
+
+hr.salto {
+    margin: 24px 0;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 420px;
+    height: 580px;
+    width: calc(100% - var(--spacing-8));
+    background-color: var(--surface-container-highest);
+    border-radius: var(--radius-large);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-3);
+    z-index: 999;
+    animation: modal-open var(--tr-duration-medium) var(--tr-easing-emphasized) forwards;
+}
+
+.aviso-img {
+    height: auto;
+    width: 360px;
+}
+@keyframes modal-open {
+    0% {
+        transform: translate(-50%, calc(-50% + var(--spacing-5)));
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: translate(-50%, calc(-50% + var(--spacing-5)));
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.modal-overlay {
+    z-index: 6;
+    visibility: visible;
+    animation: fade-overlay var(--tr-duration-short) var(--tr-easing-linear) forwards;
+}
+
+@keyframes fade-overlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
